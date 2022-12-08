@@ -51,6 +51,7 @@
 
     #replay img {
         width: 55px;
+        margin-bottom: 20px;
     }
 
     #replay {
@@ -133,7 +134,7 @@
         } */
         h2 {
             font-size: 4rem;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         .box {
@@ -154,8 +155,9 @@
         #p1,
         #p2 {
             background-color: gainsboro;
-            padding: 10px 13px;
-            margin: 40px 10px;
+            padding: 10px 9px;
+            margin: 5px 5px;
+            margin-top: 40px;
         }
 
         .player {
@@ -168,11 +170,11 @@
 
         #messagePlayerName {
             /* background-color: red; */
-            margin: 6px 10px 7px 10px;
+            margin: 46px 10px 7px 10px;
             padding: 10px 5px;
             text-align: center;
             font-size: 24px;
-            top: 35px;
+            /* top: 35px; */
             color: brown;
             display: none;
         }
@@ -184,6 +186,7 @@
 <script>
     let p1 = document.getElementById('p1');
     let p2 = document.getElementById('p2');
+    let head = document.getElementById('heading');
     let win = 1;
 
     // showing / hiding Player name message
@@ -228,6 +231,8 @@
     function toggle(select) {
         if (select == 10) {
             console.log("Game over");
+            // head.style.fontSize='2.2rem';
+            head.innerHTML ="Game Over" ;
         }
         else if (select % 2 == 1) {
             p1f(select);
@@ -429,7 +434,6 @@
     //  Congrats
 
     function congratulations(winner) {
-        let head = document.getElementById('heading');
         // let replay=document.getElementById('replay'); // no use till now
         if (winner == 'O') {
             head.style.background = 'orange';
