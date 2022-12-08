@@ -54,7 +54,7 @@ h2 {
 }
 
 .sing {
-    opacity: 0.02;
+    opacity: 0.1;
 }
 
 
@@ -70,6 +70,7 @@ h2 {
     background-color: gainsboro;
     padding: 10px 30px;
     margin: 2px;
+    border: 2px solid black;
 }
 
 #messagePlayerName {
