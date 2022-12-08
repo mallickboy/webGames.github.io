@@ -1,0 +1,137 @@
+h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+
+#replay img {
+    width: 55px;
+    margin-bottom: 20px;
+}
+
+#replay {
+    display: flex;
+    margin-left: 15px;
+    justify-content: center;
+}
+
+.container {
+    /* display :flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    background-color: aliceblue;
+    margin: 1px 2%;
+    padding: 5px 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.rowitem {
+    display: flex;
+    width: 100%;
+    /* flex-wrap: no-wrap; */
+    /* margin: 34px; */
+    align-items: center;
+    justify-content: center;
+    /* background-color:bisque; */
+
+}
+
+.box {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    /* background-color: rgb(180, 250, 255); */
+    padding: 34px;
+    margin: 10px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    font-size: 300px;
+    box-shadow: 5px 5px 10px rgb(100 100 100);
+}
+
+.sing {
+    opacity: 0.02;
+}
+
+
+.player {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+    align-items: center;
+}
+
+#p1,
+#p2 {
+    background-color: gainsboro;
+    padding: 10px 30px;
+    margin: 2px;
+}
+
+#messagePlayerName {
+    /* background-color: red; */
+    margin: 30px 10px 10px 10px;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 50px;
+    top: 35px;
+    color: brown;
+    display: none;
+}
+
+@media only screen and (max-width:730px) {
+
+    /* body {
+            background-color: red;
+        } */
+    h2 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+
+    .box {
+        display: flex;
+        height: 50px;
+        width: 50px;
+        background-color: aquamarine;
+        /* background-color: rgb(180, 250, 255); */
+        padding: 25px;
+        margin: 7px;
+        border: 2px solid black;
+        justify-content: center;
+        align-items: center;
+        font-size: 139px;
+        box-shadow: 3px 3px 7px rgb(100 100 100);
+    }
+
+    #p1,
+    #p2 {
+        background-color: gainsboro;
+        padding: 10px 9px;
+        margin: 5px 5px;
+        margin-top: 40px;
+    }
+
+    .player {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 1.8rem;
+        align-items: center;
+    }
+
+    #messagePlayerName {
+        /* background-color: red; */
+        margin: 46px 10px 7px 10px;
+        padding: 10px 5px;
+        text-align: center;
+        font-size: 24px;
+        /* top: 35px; */
+        color: brown;
+        display: none;
+    }
+}
