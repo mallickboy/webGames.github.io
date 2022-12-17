@@ -219,32 +219,38 @@ function GameResult() {
     //     console.log("continue");
     // }
 
-    for (let i = 0, j = 0, k = 0; i < box.length; i++, j++) {
+    for (let i = 0, j = 0; j < 3; i+=3, j++) {
 
-        if (box[i] == box[++i] && box[i] == box[++i]) {
+        if (box[i] == box[i+1] && box[i] == box[i+2]) {
             console.log(`winner ${box[i]}`); //ok
             winner = box[i];
             break;
+            // console.log(`${box[i]}--${box[++i]}-- ${box[++i]}`);
         }
-        // console.log(`${box[i]}--${box[++i]}-- ${box[++i]}`);
         else if (box[j] == box[j + 3] && box[j] == box[j + 6]) {
             console.log(`winner ${box[j]}`);
             winner = box[j];
             break;
+            // console.log(`winner J ${box[j]}--${box[j+3]}---${box[j+6]}`);
         }
-        // console.log(`winner J ${box[j]}--${box[j+3]}---${box[j+6]}`);
-        else if (box[k] == box[k + 4] && box[k] == box[k + 8]) {
-            winner = box[k];
-            break; //ok
-        }
-        else if (box[k + 2] == box[k + 4] && box[k + 2] == box[k + 6]) {
-            winner = box[k];
-            break; //ok
-        }
+        
+        
     }
+    let k = 0;
+    if ((box[k] == box[k + 4] && box[k] == box[k + 8])||(box[k + 2] == box[k + 4] && box[k + 2] == box[k + 6])) {
+        winner = box[k];
+         // noly 2 possiblities checking both so no forloop needed
+    }
+    
+
+    // if (box[0]==box[2]&&box[2]==box[3]) {
+    //     winner = box[k];
+    // } else {
+        
+    // }
     congratulations(winner);
 }
-
+// console.log('updated2');
 //  Congrats
 
 function congratulations(winner) {
